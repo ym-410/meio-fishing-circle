@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 名桜大学フィッシングサークル 公式サイト
 
-## Getting Started
+名桜大学フィッシングサークルの認知度向上および新規メンバー獲得のためのプロモーションサイト。
 
-First, run the development server:
+## プロジェクト概要
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+初心者でも安心して釣りを楽しめるサークルの魅力を伝え、入会へのハードルを下げることを目的としています。
+
+## スタック
+
+- **フレームワーク**: Next.js 16 (App Router)
+- **言語**: TypeScript
+- **スタイリング**: Tailwind CSS v4
+- **アイコン**: Lucide React
+- **フォント**: Noto Sans JP
+- **ホスティング**: Vercel
+
+## プロジェクト構造
+
+```
+fishing_site/
+├── app/                      # Next.js App Router
+│   ├── layout.tsx           # ルートレイアウト（メタデータ、フォント設定）
+│   ├── page.tsx             # トップページ
+│   └── globals.css          # グローバルスタイル、テーマカラー定義
+│
+├── components/              # コンポーネント
+│   ├── ui/                  # 再利用可能なUIコンポーネント
+│   │   ├── Button.tsx       # ボタンコンポーネント
+│   │   ├── SectionTitle.tsx # セクションタイトル
+│   │   └── FeatureCard.tsx  # 特徴カード
+│   │
+│   └── sections/            # セクションコンポーネント
+│       ├── Header.tsx       # ヘッダー（スクロール対応）
+│       ├── HeroSection.tsx  # ヒーローセクション
+│       ├── AboutSection.tsx # サークル紹介
+│       ├── FeaturesSection.tsx # 特徴・メリット
+│       ├── GallerySection.tsx  # 活動実績ギャラリー
+│       ├── FAQSection.tsx   # よくある質問
+│       ├── ContactSection.tsx # お問い合わせ・SNSリンク
+│       └── Footer.tsx       # フッター
+│
+├── docs/                    # ドキュメント
+│   └── COMPONENT_GUIDE.md   # コンポーネント設計ガイド
+│
+├── public/                  # 静的ファイル
+└── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### カラーの使用方法
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Tailwindクラスで以下のように使用できます:
+```tsx
+<div className="bg-ocean-emerald text-ocean-navy border-ocean-sunset">
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 今後の拡張案
 
-## Learn More
+- [ ] 活動ブログ機能（Markdownベース）
+- [ ] 釣り場マップ（Google Maps API使用）
+- [ ] メンバー限定ページ（認証機能）
+- [ ] お問い合わせフォーム（メール送信機能）
+- [ ] 多言語対応（英語・中国語）
 
-To learn more about Next.js, take a look at the following resources:
+## レスポンシブ対応
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+すべてのコンポーネントはモバイルファーストで設計されています。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **モバイル**: デフォルト
+- **タブレット**: `md:` ブレークポイント (768px以上)
+- **デスクトップ**: `lg:` ブレークポイント (1024px以上)
 
-## Deploy on Vercel
+## トラブルシューティング
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 画像が表示されない
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Next.jsの`Image`コンポーネントを使用する場合、外部URLは`next.config.ts`で許可する必要があります:
+
+```typescript
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+    ],
+  },
+};
+```
+
+### Tailwindのカスタムカラーが効かない
+
+`app/globals.css`で定義したカラーが反映されない場合、開発サーバーを再起動してください。
+
+## ライセンス
+
+このプロジェクトは名桜大学フィッシングサークルの所有です。
+
+## お問い合わせ
+
+サイトに関するお問い合わせは、サークルの公式Instagramまでお願いします。
+
+---
