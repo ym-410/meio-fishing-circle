@@ -7,6 +7,13 @@
 
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
+import SplitText from "@/components/ui/SplitText";
+import Particles from "@/components/ui/Particles";
+
+
+const handleAnimationComplete = () => {
+  console.log('All letters have animated!');
+};
 
 export const HeroSection: React.FC = () => {
   return (
@@ -15,6 +22,19 @@ export const HeroSection: React.FC = () => {
       className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-blue-950 via-blue-900 to-cyan-800"
     >
       {/* 背景エフェクト */}
+      <div className="absolute inset-0 opacity-40">
+        <Particles
+          particleColors={["#afbfe4"]}
+          particleCount={500}
+          particleSpread={13}
+          speed={0.1}
+          particleBaseSize={160}
+          moveParticlesOnHover
+          alphaParticles={false}
+          disableRotation={false}
+          pixelRatio={1}
+      />
+      </div>
       <div className="absolute inset-0">
         {/* 波のパターン */}
         <div className="absolute inset-0 opacity-10">
@@ -27,11 +47,22 @@ export const HeroSection: React.FC = () => {
 
       {/* メインコンテンツ */}
       <div className="relative px-6 max-w-6xl mx-auto z-10 text-center">
+
         {/* キャッチコピー */}
-        
-        <h1 className="text-5xl md:text-8xl font-bold text-white mb-6 animate-fade-in-delay leading-tight">
-          青春を、<br className="md:hidden" />釣りあげよう<span className="text-cyan-400">。</span>
-        </h1>
+        <SplitText
+          text=" 青春を、釣りあげよう"
+          className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in-delay leading-tight"
+          delay={100}
+          duration={2}
+          ease="power3.out"
+          splitType="chars"
+          from={{ opacity: 0, y: 40 }}
+          to={{ opacity: 1, y: 0 }}
+          threshold={0.1}
+          rootMargin="-100px"
+          textAlign="center"
+          onLetterAnimationComplete={handleAnimationComplete}
+        />
         
         <p className="text-lg md:text-2xl text-cyan-100 mb-12 max-w-3xl mx-auto animate-fade-in-delay-2 leading-relaxed font-[family-name:var(--font-zen-old-mincho)]">
           青い海と最高の仲間たち<br className="md:hidden" />
