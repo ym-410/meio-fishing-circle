@@ -5,12 +5,15 @@
 
 'use client';
 
-import React from 'react';
+// import React from 'react';
 import { SectionTitle } from '../ui/SectionTitle';
-import Image from 'next/image';
+// import Image from 'next/image';
 
+
+export function GallerySection() {
+
+  {/*
 export const GallerySection: React.FC = () => {
-  // 実際の画像に置き換えてください
   const galleryImages = [
     {
       id: 1,
@@ -18,38 +21,8 @@ export const GallerySection: React.FC = () => {
       description: '70cmのGTを釣り上げました',
       placeholder: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop',
     },
-    {
-      id: 2,
-      title: 'BBQで交流',
-      description: '釣った魚でBBQパーティー',
-      placeholder: 'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&h=600&fit=crop',
-    },
-    {
-      id: 3,
-      title: '離島遠征',
-      description: '慶良間諸島での遠征釣行',
-      placeholder: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=600&fit=crop',
-    },
-    {
-      id: 4,
-      title: '初心者レクチャー',
-      description: '先輩が優しく教えます',
-      placeholder: 'https://images.unsplash.com/photo-1466854076813-4aa9ac0fc347?w=800&h=600&fit=crop',
-    },
-    {
-      id: 5,
-      title: 'サンセット釣行',
-      description: '夕暮れ時の幻想的な釣り',
-      placeholder: 'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800&h=600&fit=crop',
-    },
-    {
-      id: 6,
-      title: '仲間との思い出',
-      description: 'みんなで記念撮影',
-      placeholder: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=800&h=600&fit=crop',
-    },
   ];
-
+  */}
   return (
     <section id="gallery" className="py-20 bg-white">
       <div className="container mx-auto px-4">

@@ -60,9 +60,6 @@ export const HeroSection: React.FC = () => {
           <div className="flex items-center gap-2">
             <span>初心者大歓迎</span>
           </div>
-          <div className="flex items-center gap-2">
-            <span>大学生限定</span>
-          </div>
         </div>
       </div>
 
