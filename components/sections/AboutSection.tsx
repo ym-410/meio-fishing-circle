@@ -12,8 +12,20 @@ export const AboutSection: React.FC = () => {
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <SectionTitle
-          title="名桜大学フィッシングサークル"
-          subtitle="名桜大学生による、初心者大歓迎のフィッシングサークルです"
+          title={
+            <>
+              <span className="whitespace-nowrap">名桜大学</span>
+              <br className="sm:hidden" />
+              <span className="whitespace-nowrap">フィッシングサークル</span>
+            </>
+          }
+          subtitle={
+            <>
+              名桜大学生による、
+              <br className="sm:hidden" />
+              初心者大歓迎のフィッシングサークルです
+            </>
+          }
         />
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
@@ -64,11 +76,19 @@ export const AboutSection: React.FC = () => {
         {/* 説明文 */}
         <div className="mt-12 max-w-3xl mx-auto">
           <p className="text-gray-700 leading-relaxed text-center">
-            私たちフィッシングサークルは、「釣り未経験でも楽しめる」をモットーに、
+            私たちフィッシングサークルは、
+            <span className="whitespace-nowrap">「釣り未経験でも楽しめる」</span>
+            をモットーに、
+            <br className="sm:hidden" />
             沖縄の美しい海で釣りを楽しむサークルです。
+            <br />
             初心者レクチャーも充実しているため、
+            <br className="sm:hidden" />
             初心者でも気軽にご参加ください！
-            釣りに興味がある人はもちろん！魚料理や調理に興味がある人も大歓迎です！
+            <br />
+            釣りに興味がある人はもちろん！
+            <br className="sm:hidden" />
+            魚料理や調理に興味がある人も大歓迎です！
           </p>
         </div>
       </div>
