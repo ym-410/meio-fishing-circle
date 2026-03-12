@@ -22,7 +22,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
         {title}
       </h2>
       {subtitle && (
-        <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+        <p className="text-gray-600 text-[clamp(sm,2vw,lg)]  max-w-2xl mx-auto">
           {subtitle}
         </p>
       )}
