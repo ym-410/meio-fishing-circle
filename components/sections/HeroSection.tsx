@@ -29,7 +29,7 @@ export const HeroSection: React.FC = () => {
       <div className="relative px-6 max-w-6xl mx-auto z-10 text-center">
 
         {/* キャッチコピー */}
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fade-in-delay leading-tight">
+        <h1 className="text-3xl md:text-6xl font-bold text-white mb-6 animate-fade-in-delay leading-tight">
           青春を、釣りあげよう
         </h1>
         
@@ -56,7 +56,7 @@ export const HeroSection: React.FC = () => {
         </div>
 
         {/* 追加情報 */}
-        <div className="mt-16 flex flex-wrap gap-8 justify-center text-cyan-100/80 text-sm animate-fade-in-delay-2">
+        <div className="mt-16 flex flex-wrap gap-8 justify-center text-cyan-100/80 text-xl animate-fade-in-delay-2">
           <div className="flex items-center gap-2">
             <span>初心者大歓迎</span>
           </div>
