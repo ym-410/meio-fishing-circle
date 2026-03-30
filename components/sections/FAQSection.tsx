@@ -31,7 +31,7 @@ export const FAQSection: React.FC = () => {
       answer: 'もちろんOK。性別問わず歓迎です。',
     },
     {
-      question: '釣りが全くの初めてでも大丈夫ですか?',
+      question: '釣り未経験でも大丈夫ですか?',
       answer: '大丈夫。未経験スタートの人が多いです。',
     },
     {
