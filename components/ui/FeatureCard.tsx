@@ -18,12 +18,12 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
   description,
 }) => {
   return (
-    <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300">
-      <div className="w-14 h-14 bg-ocean-emerald/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
-        <Icon className="w-8 h-8 text-ocean-emerald" />
+    <div className="bg-sky-50 p-6 rounded-3xl shadow-xl transition-all duration-300 hover:scale-105">
+      <div className="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center mb-4 mx-auto">
+        <Icon className="w-8 h-8 text-emerald-500" />
       </div>
-      <h3 className="text-xl font-bold text-ocean-navy mb-2 ">{title}</h3>
-      <p className="text-gray-600">{description}</p>
+      <h3 className="text-xl font-bold text-sky-900 mb-2 ">{title}</h3>
+      <p className="text-gray-600 font-semibold">{description}</p>
     </div>
   );
 };

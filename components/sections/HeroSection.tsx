@@ -12,53 +12,61 @@ export const HeroSection: React.FC = () => {
   return (
     <section
       id="hero"
-      className="relative h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-blue-950 via-blue-900 to-cyan-800"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-sky-200 via-cyan-100 to-emerald-100"
     >
       {/* 背景エフェクト */}
       <div className="absolute inset-0">
         {/* 波のパターン */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(120,200,255,0.3),transparent_50%)]"></div>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(34,211,238,0.2),transparent_40%)]"></div>
+        <div className="absolute inset-0 opacity-40">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_110%,rgba(56,189,248,0.25),transparent_55%)]"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(16,185,129,0.18),transparent_35%)]"></div>
         </div>
-        {/* グリッドパターン */}
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:72px_72px] [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_80%)]"></div>
+        <div className="absolute -top-20 -right-10 h-72 w-72 rounded-full bg-sky-300/30 blur-3xl"></div>
+        <div className="absolute -bottom-24 -left-10 h-72 w-72 rounded-full bg-emerald-300/30 blur-3xl"></div>
       </div>
 
       {/* メインコンテンツ */}
-      <div className="relative px-6 max-w-6xl mx-auto z-10 text-center">
+      <div className="relative px-6 max-w-6xl mx-auto z-10 text-center pt-20">
 
         {/* キャッチコピー */}
-        <h1 className="text-3xl md:text-6xl font-bold text-white mb-6 animate-fade-in-delay leading-tight">
-          青春を、釣りあげよう
+        <h1 className="text-4xl md:text-7xl font-black text-sky-900 mb-6 animate-fade-in-delay leading-[1.05] tracking-tight">
+          釣る。作る。<br />
+          海でチルる。
         </h1>
         
-        <p className="text-lg md:text-2xl text-cyan-100 mb-12 max-w-3xl mx-auto animate-fade-in-delay-2 leading-relaxed font-[family-name:var(--font-zen-old-mincho)]">
-          青い海と最高の仲間たち<br className="md:hidden" />
-          一生の思い出がここから始まる
+        <p className="text-lg md:text-2xl text-sky-800 mb-10 max-w-3xl mx-auto animate-fade-in-delay-2 leading-relaxed font-bold">
+          初心者から始める、
+          <br className="md:hidden" />
+          名護のゆるフィッシングサークル
         </p>
 
         {/* CTAボタン */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-delay-2">
           <a
             href="#about"
-            className="group relative px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 text-white rounded-full font-semibold overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(6,182,212,0.5)]"
+            className="group relative px-9 py-4 bg-gradient-to-r from-sky-500 to-cyan-500 text-white rounded-3xl font-bold overflow-hidden transition-all duration-300 hover:scale-105 shadow-xl"
           >
-            <span className="relative z-10">活動を見る</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <span className="relative z-10">どんなサークル？</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
           </a>
           <a
             href="#contact"
-            className="px-8 py-4 bg-white/10 backdrop-blur-sm text-white rounded-full font-semibold border border-white/30 transition-all duration-300 hover:bg-white/20 hover:scale-105"
+            className="px-9 py-4 bg-white/80 text-sky-800 rounded-3xl font-bold transition-all duration-300 hover:bg-white hover:scale-105 shadow-xl"
           >
-            入会について
+            まずはDMする
           </a>
         </div>
 
         {/* 追加情報 */}
-        <div className="mt-16 flex flex-wrap gap-8 justify-center text-cyan-100/80 text-xl animate-fade-in-delay-2">
-          <div className="flex items-center gap-2">
-            <span>初心者大歓迎</span>
+        <div className="mt-12 flex flex-wrap gap-3 justify-center text-sky-900 text-sm md:text-base animate-fade-in-delay-2 font-bold">
+          <div className="px-4 py-2 rounded-full bg-white/70 shadow-md">
+            🌊 初心者歓迎
+          </div>
+          <div className="px-4 py-2 rounded-full bg-white/70 shadow-md">
+            🎣 月1くらい
+          </div>
+          <div className="px-4 py-2 rounded-full bg-white/70 shadow-md">
+            🍳 調理もやる
           </div>
         </div>
       </div>
@@ -68,7 +76,7 @@ export const HeroSection: React.FC = () => {
         href="#about"
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-10 opacity-60 hover:opacity-100 transition-opacity"
       >
-        <ChevronDown className="w-10 h-10 text-cyan-300" />
+        <ChevronDown className="w-10 h-10 text-sky-600" />
       </a>
     </section>
   );

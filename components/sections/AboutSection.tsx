@@ -5,11 +5,11 @@
 
 import React from 'react';
 import { SectionTitle } from '../ui/SectionTitle';
-import { Users, Heart, Target } from 'lucide-react';
+import { Fish, UtensilsCrossed, Waves } from 'lucide-react';
 
 export const AboutSection: React.FC = () => {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-sky-50/60">
       <div className="container mx-auto px-4">
         <SectionTitle
           title={
@@ -19,78 +19,59 @@ export const AboutSection: React.FC = () => {
           }
           subtitle={
             <>
-              釣りをしたり、調理をしたり、
+              読まなくても伝わる3ワード。
               <br className="sm:hidden" />
-              海を眺めたりして楽しむサークル
+              釣る。作る。眺める。
             </>
           }
         />
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          {/* メンバー構成 */}
-          <div className="text-center">
-            <div className="w-16 h-16 bg-ocean-emerald/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Users className="w-8 h-8 text-ocean-emerald" />
+          {/* 釣る */}
+          <div className="text-center bg-white rounded-3xl p-7 shadow-xl transition-transform duration-300 hover:scale-105">
+            <div className="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <Fish className="w-8 h-8 text-emerald-500" />
             </div>
-            <h3 className="text-xl font-bold text-ocean-navy mb-2">
-              メンバー構成
+            <h3 className="text-2xl font-bold text-sky-900 mb-2">
+              🎣 釣る
             </h3>
-            <p className="text-gray-600">
-              総勢3名<br />
-              男女比 3:1<br />
-              初心者率 50%(前年度)
+            <p className="text-gray-600 font-semibold">
+              月1くらいで海へ。
             </p>
           </div>
 
-          {/* 活動理念 */}
-          <div className="text-center">
-            <div className="w-16 h-16 bg-ocean-emerald/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Heart className="w-8 h-8 text-ocean-emerald" />
+          {/* 作る */}
+          <div className="text-center bg-white rounded-3xl p-7 shadow-xl transition-transform duration-300 hover:scale-105">
+            <div className="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <UtensilsCrossed className="w-8 h-8 text-orange-500" />
             </div>
-            <h3 className="text-xl font-bold text-ocean-navy mb-2">
-              活動理念
+            <h3 className="text-2xl font-bold text-sky-900 mb-2">
+              🍳 作る
             </h3>
-            <p className="text-gray-600">
-              釣りを通じて<br />
-              仲間との絆を深め<br />
-              最高の思い出を作る
+            <p className="text-gray-600 font-semibold">
+              釣った魚をみんなで調理。
             </p>
           </div>
 
-          {/* 活動内容 */}
-          <div className="text-center">
-            <div className="w-16 h-16 bg-ocean-emerald/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Target className="w-8 h-8 text-ocean-emerald" />
+          {/* 眺める */}
+          <div className="text-center bg-white rounded-3xl p-7 shadow-xl transition-transform duration-300 hover:scale-105">
+            <div className="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
+              <Waves className="w-8 h-8 text-sky-500" />
             </div>
-            <h3 className="text-xl font-bold text-ocean-navy mb-2">
-              活動内容
+            <h3 className="text-2xl font-bold text-sky-900 mb-2">
+              🌊 眺める
             </h3>
-            <p className="text-gray-600">
-              月1回程度の釣行<br />
-              釣った魚の調理会<br />
-              海を眺めながら交流
+            <p className="text-gray-600 font-semibold">
+              海風の中でゆるく話す。
             </p>
           </div>
         </div>
 
         {/* 説明文 */}
-        <div className="mt-12 max-w-3xl mx-auto">
-          <p className="text-gray-700 leading-relaxed text-center">
-            私たちフィッシングサークルは、
-            <span className="whitespace-nowrap">「釣り未経験でも楽しめる」</span>
-            をモットーに、
-            <br className="sm:hidden" />
-            沖縄の海で釣りをしたり、釣った魚を調理したり、
-            <br className="sm:hidden" />
-            海を眺めながらゆったり過ごして楽しむサークルです。
-            <br />
-            初心者レクチャーも充実しているため、
-            <br className="sm:hidden" />
-            初心者でも気軽にご参加ください！
-            <br />
-            釣りに興味がある人はもちろん！
-            <br className="sm:hidden" />
-            魚料理や調理に興味がある人も大歓迎です！
+        <div className="mt-12 max-w-4xl mx-auto text-center bg-emerald-100/50 rounded-3xl p-8">
+          <p className="text-sky-900 text-2xl md:text-4xl font-black leading-tight">
+            ガチ部活じゃない。<br />
+            友達と海で遊ぶサークル。
           </p>
         </div>
       </div>

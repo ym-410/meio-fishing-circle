@@ -22,44 +22,38 @@ export const Header: React.FC = () => {
   }, []);
 
   const navItems = [
-    { label: 'About', href: '#about' },
-    { label: 'Features', href: '#features' },
-    { label: 'Gallery', href: '#gallery' },
-    { label: 'FAQ', href: '#faq' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'どんなサークル？', href: '#about' },
+    { label: 'ゆるポイント', href: '#features' },
+    { label: '写真', href: '#gallery' },
+    { label: '質問', href: '#faq' },
+    { label: 'DM', href: '#contact' },
   ];
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          ? 'bg-white shadow-md' 
-          : 'bg-ocean-navy/90 backdrop-blur-sm'
+        isScrolled
+          ? 'bg-white/85 shadow-xl backdrop-blur-sm'
+          : 'bg-transparent'
       }`}
     >
       <nav className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
-          {/* ロゴ */}
-          <a 
-            href="#hero" 
-            className={`text-2xl font-bold transition-colors duration-300 ${
-              isScrolled ? 'text-ocean-navy' : 'text-white'
-            }`}
+        <div
+          className="flex items-center justify-between"
+        >
+          <a
+            href="#hero"
+            className="text-2xl font-bold text-sky-900"
           >
-            MEIO FISHING
+            MEIO FISHING CLUB
           </a>
 
-          {/* デスクトップナビゲーション */}
           <ul className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <li key={item.href}>
                 <a
                   href={item.href}
-                  className={`transition-colors duration-200 ${
-                    isScrolled 
-                      ? 'text-gray-700 hover:text-ocean-emerald' 
-                      : 'text-white/90 hover:text-white'
-                  }`}
+                  className="text-sky-900 hover:text-emerald-500 transition-colors duration-200"
                 >
                   {item.label}
                 </a>
@@ -67,31 +61,22 @@ export const Header: React.FC = () => {
             ))}
           </ul>
 
-          {/* モバイルメニューボタン */}
           <button
-            className={`md:hidden transition-colors duration-300 ${
-              isScrolled ? 'text-ocean-navy' : 'text-white'
-            }`}
+            className="md:hidden transition-colors duration-300 text-sky-900"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="メニューを開閉"
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
-        {/* モバイルメニュー */}
         {isMobileMenuOpen && (
-          <ul className={`md:hidden mt-4 space-y-3 ${
-            isScrolled ? 'bg-white' : 'bg-ocean-navy/95'
-          } rounded-lg p-4`}>
+          <ul className="md:hidden mt-4 space-y-2 bg-white/95 rounded-3xl p-4 shadow-xl">
             {navItems.map((item) => (
               <li key={item.href}>
                 <a
                   href={item.href}
-                  className={`block py-2 transition-colors duration-200 ${
-                    isScrolled 
-                      ? 'text-gray-700 hover:text-ocean-emerald' 
-                      : 'text-white/90 hover:text-white'
-                  }`}
+                  className="block py-2 px-3 rounded-2xl text-sky-900 font-semibold transition-colors duration-200 hover:bg-sky-50 hover:text-emerald-500"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}
