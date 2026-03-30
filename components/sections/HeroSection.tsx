@@ -6,7 +6,13 @@
 'use client';
 
 import React from 'react';
-import { ChevronDown } from 'lucide-react';
+import { CalendarDays, ChevronDown, MapPin } from 'lucide-react';
+
+const nextEvent = {
+  date: '未定',
+  time: '',
+  place: '未定',
+};
 
 export const HeroSection: React.FC = () => {
   return (
@@ -22,7 +28,6 @@ export const HeroSection: React.FC = () => {
 
       {/* 背景エフェクト */}
       <div className="absolute inset-0">
-        {/* 波のパターン */}
         <div className="absolute inset-0 opacity-55">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_110%,rgba(56,189,248,0.35),transparent_55%)]"></div>
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(16,185,129,0.25),transparent_35%)]"></div>
@@ -33,12 +38,11 @@ export const HeroSection: React.FC = () => {
 
       {/* メインコンテンツ */}
       <div className="relative px-6 max-w-6xl mx-auto z-10 text-center pt-20">
-
         {/* キャッチコピー */}
         <h1 className="text-3xl md:text-7xl font-black text-white mb-6 animate-fade-in-delay leading-[1.05] tracking-tight drop-shadow-[0_10px_25px_rgba(0,0,0,0.35)]">
           青春を、釣り上げよう
         </h1>
-        
+
         <p className="text-lg md:text-2xl text-sky-100 mb-10 max-w-3xl mx-auto animate-fade-in-delay-2 leading-relaxed font-bold drop-shadow-[0_6px_18px_rgba(0,0,0,0.3)]">
           初心者歓迎！
           <br className="md:hidden" />
@@ -63,16 +67,30 @@ export const HeroSection: React.FC = () => {
         </div>
 
         {/* 追加情報 */}
-        <div className="mt-12 flex flex-wrap gap-3 justify-center text-sky-900 text-sm md:text-base animate-fade-in-delay-2 font-bold">
-          <div className="px-4 py-2 rounded-full bg-white/88 shadow-md border border-white/70">
+        <div className="mt-6 flex flex-wrap gap-2 justify-center text-sky-900 text-xs md:text-sm animate-fade-in-delay-2 font-bold">
+          <div className="px-3 py-1.5 rounded-2xl bg-white/88 shadow-md border border-white/70">
             交友関係が欲しい人も！
           </div>
-          <div className="px-4 py-2 rounded-full bg-white/88 shadow-md border border-white/70">
-            
+          <div className="px-3 py-1.5 rounded-2xl bg-white/88 shadow-md border border-white/70">
             初心者歓迎
           </div>
-          <div className="px-4 py-2 rounded-full bg-white/88 shadow-md border border-white/70">
+          <div className="px-3 py-1.5 rounded-2xl bg-white/88 shadow-md border border-white/70">
             料理が好きな人も！
+          </div>
+        </div>
+
+        {/* 近々の日程 */}
+        <div className="mt-6 flex justify-center animate-fade-in-delay-2">
+          <div className="w-full max-w-md bg-white/90 rounded-2xl px-5 py-4 shadow-xl border border-white/70 text-left">
+            <p className="inline-flex items-center gap-1 text-xs font-bold text-sky-700">
+              <CalendarDays className="w-4 h-4" />
+              近々の予定
+            </p>
+            <p className="mt-1 text-lg font-black text-sky-900">{nextEvent.date} {nextEvent.time}</p>
+            <p className="mt-1 inline-flex items-center gap-1 text-sm font-semibold text-sky-700">
+              <MapPin className="w-4 h-4" />
+              {nextEvent.place}
+            </p>
           </div>
         </div>
       </div>
