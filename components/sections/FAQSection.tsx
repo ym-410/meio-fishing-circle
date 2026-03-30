@@ -49,7 +49,7 @@ export const FAQSection: React.FC = () => {
       <div className="container mx-auto px-4">
         <SectionTitle
           title="よくある質問"
-          subtitle="気になることだけ、サクッと。"
+          subtitle="気になること教えます。"
         />
 
         <div className="max-w-3xl mx-auto space-y-4">

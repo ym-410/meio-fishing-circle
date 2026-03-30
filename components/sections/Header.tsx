@@ -33,19 +33,17 @@ export const Header: React.FC = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white/85 shadow-xl backdrop-blur-sm'
+          ? 'bg-sky-900/10 backdrop-blur-md'
           : 'bg-transparent'
       }`}
     >
       <nav className="container mx-auto px-4 py-4">
-        <div
-          className="flex items-center justify-between"
-        >
+        <div className="flex items-center justify-between bg-white/88 backdrop-blur-xl rounded-3xl px-4 py-3 shadow-2xl border border-white/70">
           <a
             href="#hero"
             className="text-2xl font-bold text-sky-900"
           >
-            MEIO FISHING CIRCLE
+            FISHING CIRCLE
           </a>
 
           <ul className="hidden md:flex items-center gap-8">
@@ -53,7 +51,7 @@ export const Header: React.FC = () => {
               <li key={item.href}>
                 <a
                   href={item.href}
-                  className="text-sky-900 hover:text-emerald-500 transition-colors duration-200"
+                  className="text-sky-900 font-semibold hover:text-emerald-500 transition-colors duration-200"
                 >
                   {item.label}
                 </a>
@@ -71,7 +69,7 @@ export const Header: React.FC = () => {
         </div>
 
         {isMobileMenuOpen && (
-          <ul className="md:hidden mt-4 space-y-2 bg-white/95 rounded-3xl p-4 shadow-xl">
+          <ul className="md:hidden mt-4 space-y-2 bg-white/96 backdrop-blur-xl rounded-3xl p-4 shadow-2xl border border-white/70">
             {navItems.map((item) => (
               <li key={item.href}>
                 <a

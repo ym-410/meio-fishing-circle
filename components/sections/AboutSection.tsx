@@ -69,8 +69,8 @@ export const AboutSection: React.FC = () => {
 
         {/* 説明文 */}
         <div className="mt-12 max-w-4xl mx-auto text-center bg-emerald-100/50 rounded-3xl p-8">
-          <p className="text-sky-900 text-2xl md:text-4xl font-black leading-tight">
-            のんびり海を楽しむサークル。
+          <p className="text-sky-900 text-xl md:text-4xl font-black leading-tight">
+            のんびり海を楽しむサークル
           </p>
         </div>
       </div>
