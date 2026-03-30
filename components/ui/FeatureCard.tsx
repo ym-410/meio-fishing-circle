@@ -22,7 +22,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
       <div className="w-14 h-14 bg-ocean-emerald/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
         <Icon className="w-8 h-8 text-ocean-emerald" />
       </div>
-      <h3 className="text-xl font-bold text-ocean-navy mb-2">{title}</h3>
+      <h3 className="text-xl font-bold text-ocean-navy mb-2 ">{title}</h3>
       <p className="text-gray-600">{description}</p>
     </div>
   );

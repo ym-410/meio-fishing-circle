@@ -14,16 +14,14 @@ export const AboutSection: React.FC = () => {
         <SectionTitle
           title={
             <>
-              <span className="whitespace-nowrap">名桜大学</span>
-              <br className="sm:hidden" />
-              <span className="whitespace-nowrap">フィッシングサークル</span>
+              <span className="whitespace-nowrap">どんなサークル？</span>
             </>
           }
           subtitle={
             <>
-              名桜大学生による、
+              釣りをしたり、調理をしたり、
               <br className="sm:hidden" />
-              初心者大歓迎のフィッシングサークルです
+              海を眺めたりして楽しむサークル
             </>
           }
         />
@@ -68,7 +66,9 @@ export const AboutSection: React.FC = () => {
               活動内容
             </h3>
             <p className="text-gray-600">
-              月1回程度の釣行<br /><br />
+              月1回程度の釣行<br />
+              釣った魚の調理会<br />
+              海を眺めながら交流
             </p>
           </div>
         </div>
@@ -80,7 +80,9 @@ export const AboutSection: React.FC = () => {
             <span className="whitespace-nowrap">「釣り未経験でも楽しめる」</span>
             をモットーに、
             <br className="sm:hidden" />
-            沖縄の美しい海で釣りを楽しむサークルです。
+            沖縄の海で釣りをしたり、釣った魚を調理したり、
+            <br className="sm:hidden" />
+            海を眺めながらゆったり過ごして楽しむサークルです。
             <br />
             初心者レクチャーも充実しているため、
             <br className="sm:hidden" />
