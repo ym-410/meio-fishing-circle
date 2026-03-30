@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
         <div className="text-center">
           <h3 className="text-2xl font-black mb-2">名桜大学フィッシングサークル</h3>
           <p className="text-sky-700 mb-4 font-semibold">
-            釣る。作る。海でチルる。
+            青春を、釣りあげよう。
           </p>
           <div className="flex justify-center gap-6 mb-4">
             <a

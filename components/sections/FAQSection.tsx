@@ -20,7 +20,7 @@ export const FAQSection: React.FC = () => {
   const faqs: FAQItem[] = [
     {
       question: '費用はどのくらいかかりますか?',
-      answer: '会費はなし。活動時に実費が少しだけ。',
+      answer: '会費はなし。エサ代や道具代はかかります。',
     },
     {
       question: '車がなくても参加できますか?',

@@ -30,14 +30,13 @@ export const HeroSection: React.FC = () => {
 
         {/* キャッチコピー */}
         <h1 className="text-4xl md:text-7xl font-black text-sky-900 mb-6 animate-fade-in-delay leading-[1.05] tracking-tight">
-          釣る。作る。<br />
-          海でチルる。
+          青春を、釣り上げよう。
         </h1>
         
         <p className="text-lg md:text-2xl text-sky-800 mb-10 max-w-3xl mx-auto animate-fade-in-delay-2 leading-relaxed font-bold">
-          初心者から始める、
+          初心者歓迎！
           <br className="md:hidden" />
-          名護のゆるフィッシングサークル
+          名桜大学フィッシングサークル
         </p>
 
         {/* CTAボタン */}
@@ -60,13 +59,13 @@ export const HeroSection: React.FC = () => {
         {/* 追加情報 */}
         <div className="mt-12 flex flex-wrap gap-3 justify-center text-sky-900 text-sm md:text-base animate-fade-in-delay-2 font-bold">
           <div className="px-4 py-2 rounded-full bg-white/70 shadow-md">
-            🌊 初心者歓迎
+            初心者歓迎
           </div>
           <div className="px-4 py-2 rounded-full bg-white/70 shadow-md">
-            🎣 月1くらい
+            交友関係が欲しい人も！
           </div>
           <div className="px-4 py-2 rounded-full bg-white/70 shadow-md">
-            🍳 調理もやる
+            料理が好きな人も！
           </div>
         </div>
       </div>

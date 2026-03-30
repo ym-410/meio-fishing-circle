@@ -19,9 +19,9 @@ export const AboutSection: React.FC = () => {
           }
           subtitle={
             <>
-              読まなくても伝わる3ワード。
+              ゆるく楽しくのんびりと釣りをします。
               <br className="sm:hidden" />
-              釣る。作る。眺める。
+              
             </>
           }
         />
@@ -33,7 +33,7 @@ export const AboutSection: React.FC = () => {
               <Fish className="w-8 h-8 text-emerald-500" />
             </div>
             <h3 className="text-2xl font-bold text-sky-900 mb-2">
-              🎣 釣る
+              釣る
             </h3>
             <p className="text-gray-600 font-semibold">
               月1くらいで海へ。
@@ -46,10 +46,10 @@ export const AboutSection: React.FC = () => {
               <UtensilsCrossed className="w-8 h-8 text-orange-500" />
             </div>
             <h3 className="text-2xl font-bold text-sky-900 mb-2">
-              🍳 作る
+              作る
             </h3>
             <p className="text-gray-600 font-semibold">
-              釣った魚をみんなで調理。
+              釣った魚を調理。
             </p>
           </div>
 
@@ -59,10 +59,10 @@ export const AboutSection: React.FC = () => {
               <Waves className="w-8 h-8 text-sky-500" />
             </div>
             <h3 className="text-2xl font-bold text-sky-900 mb-2">
-              🌊 眺める
+              眺める
             </h3>
             <p className="text-gray-600 font-semibold">
-              海風の中でゆるく話す。
+              沖縄の海でゆるく話す。
             </p>
           </div>
         </div>
@@ -70,8 +70,7 @@ export const AboutSection: React.FC = () => {
         {/* 説明文 */}
         <div className="mt-12 max-w-4xl mx-auto text-center bg-emerald-100/50 rounded-3xl p-8">
           <p className="text-sky-900 text-2xl md:text-4xl font-black leading-tight">
-            ガチ部活じゃない。<br />
-            友達と海で遊ぶサークル。
+            のんびり海を楽しむサークル。
           </p>
         </div>
       </div>

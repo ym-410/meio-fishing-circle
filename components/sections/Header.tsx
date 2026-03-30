@@ -23,7 +23,7 @@ export const Header: React.FC = () => {
 
   const navItems = [
     { label: 'どんなサークル？', href: '#about' },
-    { label: 'ゆるポイント', href: '#features' },
+    { label: 'サークルの特色', href: '#features' },
     { label: '写真', href: '#gallery' },
     { label: '質問', href: '#faq' },
     { label: 'DM', href: '#contact' },
@@ -45,7 +45,7 @@ export const Header: React.FC = () => {
             href="#hero"
             className="text-2xl font-bold text-sky-900"
           >
-            MEIO FISHING CLUB
+            MEIO FISHING CIRCLE
           </a>
 
           <ul className="hidden md:flex items-center gap-8">

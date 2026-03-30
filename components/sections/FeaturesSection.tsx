@@ -28,7 +28,7 @@ export const FeaturesSection: React.FC = () => {
     {
       icon: Users,
       title: 'ひとり参加でも安心',
-      description: 'すぐ話せる空気感がある。',
+      description: '私たちが空気を作ります！',
     },
     {
       icon: Calendar,
@@ -37,8 +37,8 @@ export const FeaturesSection: React.FC = () => {
     },
     {
       icon: MapPin,
-      title: '名護の海が遊び場',
-      description: '放課後にすぐ非日常。',
+      title: '沖縄での釣り',
+      description: '綺麗な夕暮れはいいですよ。',
     },
   ];
 
@@ -46,8 +46,8 @@ export const FeaturesSection: React.FC = () => {
     <section id="features" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <SectionTitle
-          title="うちのゆるポイント"
-          subtitle="3秒で伝わる、参加しやすさ。"
+          title="サークルの特色"
+          subtitle="初心者でも大丈夫！"
         />
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
