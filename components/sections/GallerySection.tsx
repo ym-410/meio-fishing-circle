@@ -63,7 +63,7 @@ export const GallerySection: React.FC = () => {
               href="https://www.instagram.com/meio_fishing/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-7 py-4 bg-gradient-to-r from-sky-500 via-cyan-500 to-emerald-500 text-white rounded-3xl font-bold shadow-xl transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center gap-2 px-7 py-4 bg-[linear-gradient(135deg,_#feda75_0%,_#fa7e1e_25%,_#d62976_50%,_#962fbf_75%,_#4f5bd5_100%)] text-white rounded-3xl font-bold shadow-xl transition-all duration-300 hover:scale-105 hover:brightness-110"
             >
               Instagramを見る
             </a>
