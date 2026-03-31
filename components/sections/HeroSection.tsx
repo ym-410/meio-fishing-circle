@@ -9,7 +9,7 @@ import React from 'react';
 import { CalendarDays, ChevronDown, MapPin } from 'lucide-react';
 
 const nextEvent = {
-  date: '未定',
+  date: '説明会開催検討中',
   time: '',
   place: '未定',
 };
@@ -62,7 +62,7 @@ export const HeroSection: React.FC = () => {
             href="#contact"
             className="px-9 py-4 bg-white/85 text-sky-800 rounded-3xl font-bold transition-all duration-300 hover:bg-white hover:scale-105 shadow-xl"
           >
-            まずはDMする
+            質問・相談はコチラ
           </a>
         </div>
 
