@@ -22,8 +22,8 @@ export const ContactSection: React.FC = () => {
           
           
             <p className="text-sky-700 font-semibold mb-6">
-              迷っててもOK。<br />
-              まずは質問からで大丈夫。
+              迷っててもOK！<br />
+              質問・相談受付中
             </p>
             <div className="space-y-3 pt-2 max-w-md mx-auto">
               <a

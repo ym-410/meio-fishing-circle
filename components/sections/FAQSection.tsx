@@ -32,11 +32,11 @@ export const FAQSection: React.FC = () => {
     },
     {
       question: '釣り未経験でも大丈夫ですか?',
-      answer: '大丈夫。未経験スタートの人が多いです。',
+      answer: '大丈夫です！未経験スタートの人が多いです。',
     },
     {
       question: '活動頻度はどのくらいですか?',
-      answer: 'だいたい月1。来られる日だけでOKです。',
+      answer: '月1程度。来られる日だけでOKです。',
     },
   ];
 
