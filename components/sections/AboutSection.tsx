@@ -28,7 +28,7 @@ export const AboutSection: React.FC = () => {
 
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {/* 釣る */}
-          <div className="text-center bg-white rounded-3xl p-5 sm:p-7 shadow-xl transition-transform duration-300 hover:scale-105">
+          <div className="text-center bg-white rounded-3xl p-7 shadow-xl transition-transform duration-300 hover:scale-105">
             <div className="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
               <Fish className="w-8 h-8 text-emerald-500" />
             </div>
@@ -41,7 +41,7 @@ export const AboutSection: React.FC = () => {
           </div>
 
           {/* 作る */}
-          <div className="text-center bg-white rounded-3xl p-5 sm:p-7 shadow-xl transition-transform duration-300 hover:scale-105">
+          <div className="text-center bg-white rounded-3xl p-7 shadow-xl transition-transform duration-300 hover:scale-105">
             <div className="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
               <UtensilsCrossed className="w-8 h-8 text-orange-500" />
             </div>
