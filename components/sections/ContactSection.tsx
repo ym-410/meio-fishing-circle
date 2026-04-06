@@ -35,7 +35,7 @@ export const ContactSection: React.FC = () => {
                 <Instagram className="w-5 h-5" />
                 DMでお問い合わせ
               </a>
-
+              {/**
               <a
                 href="https://lin.ee/qgAErrV"
                 target="_blank"
@@ -50,6 +50,7 @@ export const ContactSection: React.FC = () => {
                   <span className="block text-base font-black">公式LINEでお問い合わせ</span>
                 </span>
               </a>
+              */}
 
             </div>
           </div>
